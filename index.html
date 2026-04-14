@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Security - Gia Bảo</title>
+
+  <style>
+    body {
+      font-family: monospace;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #001f3f;
+      color: #FFD700;
+    }
+
+    h1 {
+      text-shadow: 0 0 5px #FFD700;
+    }
+
+    h3 {
+      margin-top: 25px;
+      border-left: 4px solid #FFD700;
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .risk-list {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+
+    /* BUTTON DOWNLOAD */
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #003366;
+      color: #FFD700;
+      border: 1px solid #FFD700;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .download-btn:hover {
+      background-color: #4383c4;
+      box-shadow: 0 0 10px #FFD700;
+      transform: scale(1.05);
+    }
+
+    /* scan line effect */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(to bottom,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.02) 1px,
+          transparent 1px,
+          transparent 4px);
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <h1>Kính chào</h1>
+
+    <p>
+      Hôm nay mình sẽ nói về mạng xã hội và những rủi ro đi kèm.
+      Internet rất thú vị nhưng cũng tiềm ẩn nhiều nguy hiểm:
+    </p>
+
+    <ul>
+      <li><span class="risk-list">Tấn công mạng & Mã độc:</span> Kẻ xấu có thể cài virus vào máy tính.</li>
+      <li><span class="risk-list">Bạo lực mạng:</span> Bạn có thể bị công kích từ người dùng độc hại.</li>
+    </ul>
+
+    <h3>🛡️ Cách phòng tránh</h3>
+
+    <ul>
+      <li>Tránh link tải không rõ nguồn gốc</li>
+      <li>Không bấm quảng cáo lạ</li>
+      <li>Không tin người lạ trên mạng</li>
+    </ul>
+
+    <h3>⚠️ Cảnh báo</h3>
+
+    <p>
+      File trông như .jpg có thể là .jpg.exe giả mạo.
+    </p>
+
+    <h3>Download Antivirus</h3>
+
+    <p>Khuyến nghị sử dụng phần mềm bảo mật chính hãng:</p>
+
+    <a class="download-btn" href="https://www.bitdefender.com/" target="_blank">
+      Download Bitdefender Official Site
+    </a>
+
+    <a class="download-btn" href="https://www.bkav.com/" target="_blank">
+      Download BKAV
+    </a>
+
+    <a class="download-btn" href="https://www.avast.com/" target="_blank">
+      Download Avast Antivirus
+    </a>
+
+    <h3>Thank You and Goodbye</h3>
+
+    <p>Developer & Creator & idea : Trần Gia Bảo</p>
+
+  </main>
+
+</body>
+
+</html>
