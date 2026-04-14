@@ -40,7 +40,7 @@
       font-weight: bold;
     }
 
-    /* BUTTON DOWNLOAD */
+    /* BUTTON STYLE */
     .download-btn {
       display: inline-block;
       margin-top: 15px;
@@ -60,16 +60,29 @@
       transform: scale(1.05);
     }
 
-    /* scan line effect */
+    .link-box {
+      display: inline-block;
+      margin: 6px 0;
+      color: #66aaff;
+      text-decoration: none;
+    }
+
+    .link-box:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
     body::after {
       content: "";
       position: fixed;
       inset: 0;
-      background: repeating-linear-gradient(to bottom,
-          rgba(255, 255, 255, 0.02),
-          rgba(255, 255, 255, 0.02) 1px,
-          transparent 1px,
-          transparent 4px);
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.02),
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 4px
+      );
       pointer-events: none;
     }
   </style>
@@ -91,7 +104,6 @@
     </ul>
 
     <h3>🛡️ Cách phòng tránh</h3>
-
     <ul>
       <li>Tránh link tải không rõ nguồn gốc</li>
       <li>Không bấm quảng cáo lạ</li>
@@ -99,17 +111,71 @@
     </ul>
 
     <h3>⚠️ Cảnh báo</h3>
-
     <p>
-      File trông như .jpg có thể là .jpg.exe giả mạo.
+      Windows có thể ẩn đuôi file, nên file thật là .exe nhưng hiển thị giống .jpg.
+      Không tồn tại kiểu “.jpg.exe hợp lệ”, mà là double extension trick.
     </p>
 
-    <h3>Download Antivirus</h3>
+    <h3>Phân loại malware</h3>
+    <p>Nếu malware tự nhân bản → Virus.</p>
+    <p>Nếu khóa file → Ransomware.</p>
+    <p>Nếu giả dạng phần mềm → Trojan.</p>
+    <p>Nếu theo dõi/quảng cáo → Spyware / Adware.</p>
+    <p>Nếu lan qua mạng → Worm.</p>
 
-    <p>Khuyến nghị sử dụng phần mềm bảo mật chính hãng:</p>
+    <!-- 🔥 ADDED WIKIPEDIA BUTTON SECTION -->
+    <h3>🔎 Wikipedia Malware Hub</h3>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Malware" target="_blank">
+      Malware Overview
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank">
+      Virus Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Worm_(computing)" target="_blank">
+      Worm Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank">
+      Trojan Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank">
+      Ransomware Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Spyware" target="_blank">
+      Spyware Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Adware" target="_blank">
+      Adware Wiki
+    </a>
+
+    <a class="download-btn" href="https://en.wikipedia.org/wiki/Malware_analysis" target="_blank">
+      Malware Analysis
+    </a>
+
+    <h3>🔎 Tìm hiểu thêm</h3>
+
+    <a class="link-box" href="https://en.wikipedia.org/wiki/Computer_security" target="_blank">
+      Computer Security
+    </a>
+    <br>
+    <a class="link-box" href="https://en.wikipedia.org/wiki/Botnet" target="_blank">
+      Botnet
+    </a>
+    <br>
+    <a class="link-box" href="https://en.wikipedia.org/wiki/Keylogger" target="_blank">
+      Keylogger
+    </a>
+
+    <h3>Download Antivirus from site</h3>
 
     <a class="download-btn" href="https://www.bitdefender.com/" target="_blank">
-      Download Bitdefender Official Site
+      Download Bitdefender
     </a>
 
     <a class="download-btn" href="https://www.bkav.com/" target="_blank">
@@ -117,12 +183,13 @@
     </a>
 
     <a class="download-btn" href="https://www.avast.com/" target="_blank">
-      Download Avast Antivirus
+      Download Avast AntiVirus
     </a>
 
-    <h3>Thank You and Goodbye</h3>
+    <h4>web by Trần Gia Bảo</h4>
 
-    <p>Developer & Creator & idea : Trần Gia Bảo</p>
+    <h3>Thank You</h3>
+    <p>Developer & Creator & Idea: Trần Gia Bảo</p>
 
   </main>
 
