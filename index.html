@@ -6,17 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cyber Security Safe</title>
 
+<link rel="icon" href="istockphoto-2204974549-170x170.png" type="image/png">
+
+<meta name="description" content="Cyber Security awareness website">
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 
 <style>
 
 body {
-  font-family: 'Inter', 'Roboto', 'JetBrains Mono', sans-serif;
+  font-family: 'Inter', 'Roboto', sans-serif;
   line-height: 1.7;
   max-width: 850px;
   margin: 40px auto;
@@ -46,6 +49,12 @@ h3 {
   margin: 15px 0;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 /* LIST */
@@ -96,7 +105,7 @@ img {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* SCAN LINE EFFECT */
+/* SCANLINE EFFECT */
 body::after {
   content: "";
   position: fixed;
@@ -109,6 +118,12 @@ body::after {
     transparent 4px
   );
   pointer-events: none;
+  opacity: 0.15;
+}
+
+/* CODE FONT */
+code {
+  font-family: 'JetBrains Mono', monospace;
 }
 
 </style>
@@ -119,86 +134,87 @@ body::after {
 <h1>🛡 Cyber Security Safe</h1>
 
 <div class="card">
-<p>
-Hôm nay mình sẽ nói về mạng xã hội và những rủi ro đi kèm.
-Internet rất thú vị nhưng cũng tiềm ẩn nhiều nguy hiểm.
-</p>
+  <p>
+    Hôm nay mình sẽ nói về mạng xã hội và những rủi ro đi kèm.
+    Internet rất thú vị nhưng cũng tiềm ẩn nhiều nguy hiểm.
+  </p>
 </div>
 
 <div class="card">
-<h3>⚠ Rủi ro</h3>
-<ul>
-<li><b>Tấn công mạng & Mã độc:</b> Kẻ xấu có thể cài virus vào máy tính.</li>
-<li><b>Bạo lực mạng:</b> Bạn có thể bị công kích từ người dùng độc hại.</li>
-</ul>
+  <h3>⚠ Rủi ro</h3>
+  <ul>
+    <li><b>Tấn công mạng & Mã độc:</b> Kẻ xấu có thể cài virus vào máy tính.</li>
+    <li><b>Bạo lực mạng:</b> Bạn có thể bị công kích từ người dùng độc hại.</li>
+  </ul>
 </div>
 
 <div class="card">
-<h3>🛡️ Cách phòng tránh</h3>
-<ul>
-<li>Tránh link tải không rõ nguồn gốc</li>
-<li>Không bấm quảng cáo lạ</li>
-<li>Không tin người lạ trên mạng</li>
-</ul>
+  <h3>🛡️ Cách phòng tránh</h3>
+  <ul>
+    <li>Tránh link tải không rõ nguồn gốc</li>
+    <li>Không bấm quảng cáo lạ</li>
+    <li>Không tin người lạ trên mạng</li>
+  </ul>
 </div>
 
 <div class="card">
-<h3>⚠ Cảnh báo file</h3>
-<p>Windows có thể ẩn đuôi file, nên file thật là .exe nhưng hiển thị giống .jpg.
-Không tồn tại kiểu “.jpg.exe hợp lệ”.
-</p>
-<p>Kẻ xấu có thể ẩn mã độc qua nhiều cách như file tải xuống, email giả mạo, website độc hại, phần mềm crack hoặc USB nhiễm virus</p>
+  <h3>⚠ Cảnh báo file</h3>
+  <p>
+    Windows có thể ẩn đuôi file, nên file thật là <code>.exe</code> nhưng hiển thị giống <code>.jpg</code>.
+    Không tồn tại kiểu “.jpg.exe hợp lệ”.
+  </p>
+  <p>
+    Kẻ xấu có thể ẩn mã độc qua file tải xuống, email giả mạo, website độc hại, crack hoặc USB nhiễm virus.
+  </p>
 </div>
 
 <div class="card">
-<h3>🦠 Malware</h3>
+  <h3>🦠 Malware</h3>
 
-<p><b>Virus:</b> tự nhân bản và lây nhiễm sang file khác</p>
-<p><b>Ransomware:</b> mã hóa (khóa) dữ liệu và đòi tiền chuộc</p>
-<p><b>Trojan:</b> giả dạng phần mềm hợp pháp để đánh lừa người dùng</p>
-<p><b>Spyware / Adware:</b> theo dõi người dùng hoặc hiển thị quảng cáo không mong muốn</p>
-<p><b>Worm:</b> tự lan truyền qua mạng mà không cần người dùng mở file</p>
+  <p><b>Virus:</b> tự nhân bản và lây nhiễm sang file khác</p>
+  <p><b>Ransomware:</b> mã hóa dữ liệu và đòi tiền chuộc</p>
+  <p><b>Trojan:</b> giả dạng phần mềm hợp pháp</p>
+  <p><b>Spyware / Adware:</b> theo dõi hoặc hiển thị quảng cáo</p>
+  <p><b>Worm:</b> tự lan qua mạng</p>
 </div>
 
 <div class="card">
-<h3>🔎 Wikipedia Hub</h3>
+  <h3>🔎 Wikipedia Hub</h3>
 
-<a class="download-btn" href="https://en.wikipedia.org/wiki/Malware" target="_blank">Malware</a>
-<a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank">Virus</a>
-<a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank">Ransomware</a>
-<a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank">Trojan</a>
-<a class="download-btn" href="https://en.wikipedia.org/wiki/Category:Types_of_malware" target="_blank">About Malware</a>
-
-</div>
-
-<div class="card">
-<h3>🔎 Tham khảo</h3>
-
-<a class="link-box" href="https://en.wikipedia.org/wiki/Computer_security">Computer Security</a><br>
-<a class="link-box" href="https://en.wikipedia.org/wiki/Botnet">Botnet</a><br>
-<a class="link-box" href="https://en.wikipedia.org/wiki/Keylogger">Keylogger</a>
-<a class="link-box" href="https://en.wikipedia.org/wiki/Cyberbullying">CyberBullying</a>
-</div>
-
-<div class="card">
-<h3>💊 Antivirus</h3>
-
-<a class="download-btn" href="https://www.bitdefender.com/">Bitdefender</a>
-<a class="download-btn" href="https://www.avast.com/">Avast</a>
-<a class="download-btn" href="https://www.bkav.com/">BKAV</a>
-</div>
-
-<div class="card">
-
-<img src="https://www.bkns.vn/wp-content/uploads/2019/12/hack-local-la-gi.jpg">
-<img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp?itok=tl5fb-OV">
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Malware" target="_blank" rel="noopener noreferrer">Malware</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank" rel="noopener noreferrer">Virus</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank" rel="noopener noreferrer">Ransomware</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank" rel="noopener noreferrer">Trojan</a>
 
 </div>
 
 <div class="card">
-<h3>Credits</h3>
-<p>web by Trần Gia Bảo</p>
-<p>Cyber Security Awareness Project</p>
+  <h3>🔎 Tham khảo</h3>
+
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Computer_security" target="_blank" rel="noopener noreferrer">Computer Security</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Botnet" target="_blank" rel="noopener noreferrer">Botnet</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Keylogger" target="_blank" rel="noopener noreferrer">Keylogger</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Cyberbullying" target="_blank" rel="noopener noreferrer">CyberBullying</a>
+
+</div>
+
+<div class="card">
+  <h3>💊 Antivirus</h3>
+
+  <a class="download-btn" href="https://www.bitdefender.com/" target="_blank" rel="noopener noreferrer">Bitdefender</a>
+  <a class="download-btn" href="https://www.avast.com/" target="_blank" rel="noopener noreferrer">Avast</a>
+  <a class="download-btn" href="https://www.bkav.com/" target="_blank" rel="noopener noreferrer">BKAV</a>
+</div>
+
+<div class="card">
+  <img src="https://www.bkns.vn/wp-content/uploads/2019/12/hack-local-la-gi.jpg" alt="Cyber attack illustration">
+  <img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp?itok=tl5fb-OV" alt="Cyberbullying illustration">
+</div>
+
+<div class="card">
+  <h3>Credits</h3>
+  <p>web by Trần Gia Bảo</p>
+  <p>Cyber Security Awareness Project</p>
 </div>
 
 <p style="opacity:0.7; font-size:14px;">
