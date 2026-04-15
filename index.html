@@ -18,6 +18,11 @@
 
 <style>
 
+/* ===== GLOBAL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', 'Roboto', sans-serif;
   line-height: 1.7;
@@ -26,22 +31,25 @@ body {
   padding: 20px;
   background: radial-gradient(circle at top, #002b55, #00111f);
   color: #FFD700;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* TITLE */
+/* ===== TITLE ===== */
 h1 {
   text-align: center;
   text-shadow: 0 0 10px #FFD700;
   margin-bottom: 10px;
 }
 
-h3 {
+h2, h3 {
   border-left: 4px solid #FFD700;
   padding-left: 10px;
   margin-top: 30px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .card {
   border: 1px solid rgba(255, 215, 0, 0.4);
   background: rgba(255, 215, 0, 0.03);
@@ -57,7 +65,7 @@ h3 {
   transform: translateY(-2px);
 }
 
-/* LIST */
+/* ===== LIST ===== */
 ul {
   padding-left: 20px;
 }
@@ -66,7 +74,7 @@ li {
   margin-bottom: 8px;
 }
 
-/* BUTTON */
+/* ===== BUTTON ===== */
 .download-btn {
   display: inline-block;
   margin: 8px 5px;
@@ -86,7 +94,7 @@ li {
   transform: scale(1.05);
 }
 
-/* LINKS */
+/* ===== LINKS ===== */
 .link-box {
   color: #66aaff;
   text-decoration: none;
@@ -97,7 +105,7 @@ li {
   text-decoration: underline;
 }
 
-/* IMAGE */
+/* ===== IMAGE ===== */
 img {
   width: 100%;
   border-radius: 12px;
@@ -105,7 +113,7 @@ img {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* SCANLINE EFFECT */
+/* ===== SCANLINE EFFECT ===== */
 body::after {
   content: "";
   position: fixed;
@@ -121,9 +129,9 @@ body::after {
   opacity: 0.15;
 }
 
-/* CODE FONT */
+/* ===== CODE FONT ===== */
 code {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 </style>
@@ -137,6 +145,19 @@ code {
   <p>
     Hôm nay mình sẽ nói về mạng xã hội và những rủi ro đi kèm.
     Internet rất thú vị nhưng cũng tiềm ẩn nhiều nguy hiểm.
+  </p>
+</div>
+
+<div class="card">
+  <h3>📱 Mạng xã hội & ảnh hưởng</h3>
+
+  <p>
+    TikTok, Instagram, Threads, Facebook... nhìn qua là các ứng dụng mạng xã hội thường ngày,
+    nhưng luôn tồn tại những tranh cãi, bạo lực ngôn từ và sự thiếu tôn trọng.
+  </p>
+
+  <p>
+    Điều này có thể ảnh hưởng đến tư duy, cảm xúc và cách nhìn nhận của người dùng theo thời gian.
   </p>
 </div>
 
@@ -161,7 +182,6 @@ code {
   <h3>⚠ Cảnh báo file</h3>
   <p>
     Windows có thể ẩn đuôi file, nên file thật là <code>.exe</code> nhưng hiển thị giống <code>.jpg</code>.
-    Không tồn tại kiểu “.jpg.exe hợp lệ”.
   </p>
   <p>
     Kẻ xấu có thể ẩn mã độc qua file tải xuống, email giả mạo, website độc hại, crack hoặc USB nhiễm virus.
@@ -185,35 +205,39 @@ code {
   <a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank" rel="noopener noreferrer">Virus</a>
   <a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank" rel="noopener noreferrer">Ransomware</a>
   <a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank" rel="noopener noreferrer">Trojan</a>
+</div>
 
+<div class="card">
+  <h2>Internet độc hại</h2>
 </div>
 
 <div class="card">
   <h3>🔎 Tham khảo</h3>
 
-  <a class="link-box" href="https://en.wikipedia.org/wiki/Computer_security" target="_blank" rel="noopener noreferrer">Computer Security</a><br>
-  <a class="link-box" href="https://en.wikipedia.org/wiki/Botnet" target="_blank" rel="noopener noreferrer">Botnet</a><br>
-  <a class="link-box" href="https://en.wikipedia.org/wiki/Keylogger" target="_blank" rel="noopener noreferrer">Keylogger</a><br>
-  <a class="link-box" href="https://en.wikipedia.org/wiki/Cyberbullying" target="_blank" rel="noopener noreferrer">CyberBullying</a>
+  <img src="internet-toxic.jpg" alt="internet toxic">
 
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Computer_security" target="_blank">Computer Security</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Botnet" target="_blank">Botnet</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Keylogger" target="_blank">Keylogger</a><br>
+  <a class="link-box" href="https://en.wikipedia.org/wiki/Cyberbullying" target="_blank">CyberBullying</a>
 </div>
 
 <div class="card">
   <h3>💊 Antivirus</h3>
 
-  <a class="download-btn" href="https://www.bitdefender.com/" target="_blank" rel="noopener noreferrer">Bitdefender</a>
-  <a class="download-btn" href="https://www.avast.com/" target="_blank" rel="noopener noreferrer">Avast</a>
-  <a class="download-btn" href="https://www.bkav.com/" target="_blank" rel="noopener noreferrer">BKAV</a>
+  <a class="download-btn" href="https://www.bitdefender.com/" target="_blank">Bitdefender</a>
+  <a class="download-btn" href="https://www.avast.com/" target="_blank">Avast</a>
+  <a class="download-btn" href="https://www.bkav.com/" target="_blank">BKAV</a>
 </div>
 
 <div class="card">
   <img src="https://www.bkns.vn/wp-content/uploads/2019/12/hack-local-la-gi.jpg" alt="Cyber attack illustration">
-  <img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp?itok=tl5fb-OV" alt="Cyberbullying illustration">
+  <img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp" alt="Cyberbullying illustration">
 </div>
 
 <div class="card">
   <h3>Credits</h3>
-  <p>web by Trần Gia Bảo</p>
+  <p>Web by Trần Gia Bảo</p>
   <p>Cyber Security Awareness Project</p>
 </div>
 
