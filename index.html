@@ -29,8 +29,9 @@ body {
   max-width: 850px;
   margin: 40px auto;
   padding: 20px;
-  background: radial-gradient(circle at top, #002b55, #00111f);
-  color: #FFD700;
+
+  background: radial-gradient(circle at top, #0b1b2b, #050b14);
+  color: #ffffff;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,29 +40,31 @@ body {
 /* ===== TITLE ===== */
 h1 {
   text-align: center;
-  text-shadow: 0 0 10px #FFD700;
+  text-shadow: 0 0 12px #66ccff;
+  color: #e6f7ff;
   margin-bottom: 10px;
 }
 
 h2, h3 {
-  border-left: 4px solid #FFD700;
+  border-left: 4px solid #66ccff;
   padding-left: 10px;
   margin-top: 30px;
+  color: #e6f7ff;
 }
 
 /* ===== CARD ===== */
 .card {
-  border: 1px solid rgba(255, 215, 0, 0.4);
-  background: rgba(255, 215, 0, 0.03);
+  border: 1px solid rgba(102, 204, 255, 0.25);
+  background: rgba(102, 204, 255, 0.05);
   padding: 15px;
   margin: 15px 0;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: 0.2s;
 }
 
 .card:hover {
-  box-shadow: 0 0 18px rgba(255, 215, 0, 0.25);
+  box-shadow: 0 0 18px rgba(102, 204, 255, 0.3);
   transform: translateY(-2px);
 }
 
@@ -79,9 +82,9 @@ li {
   display: inline-block;
   margin: 8px 5px;
   padding: 10px 16px;
-  background: #003366;
-  color: #FFD700;
-  border: 1px solid #FFD700;
+  background: rgba(10, 30, 50, 0.8);
+  color: #ffffff;
+  border: 1px solid #66ccff;
   border-radius: 8px;
   text-decoration: none;
   transition: 0.2s;
@@ -89,19 +92,19 @@ li {
 }
 
 .download-btn:hover {
-  background: #0a4a8a;
-  box-shadow: 0 0 12px #FFD700;
+  background: rgba(30, 80, 120, 0.8);
+  box-shadow: 0 0 12px #66ccff;
   transform: scale(1.05);
 }
 
 /* ===== LINKS ===== */
 .link-box {
-  color: #66aaff;
+  color: #9ad7ff;
   text-decoration: none;
 }
 
 .link-box:hover {
-  color: white;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -120,13 +123,13 @@ body::after {
   inset: 0;
   background: repeating-linear-gradient(
     to bottom,
-    rgba(255,255,255,0.03),
-    rgba(255,255,255,0.03) 1px,
-    transparent 2px,
-    transparent 4px
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.02) 1px,
+    transparent 3px,
+    transparent 6px
   );
   pointer-events: none;
-  opacity: 0.15;
+  opacity: 0.12;
 }
 
 /* ===== CODE FONT ===== */
@@ -190,9 +193,8 @@ code {
     Windows có thể ẩn đuôi file, nên file thật là <code>.exe</code> nhưng hiển thị giống <code>.jpg</code>.
   </p>
   <p>
-    Kẻ xấu có thể ẩn mã độc qua file tải xuống, email giả mạo, website độc hại, crack hoặc USB nhiễm virus.
+    Kẻ xấu có thể lừa qua file tải xuống, email giả mạo, website độc hại hoặc USB nhiễm virus.
   </p>
-  <p>Cũng như có thể lừa đảo và chiếm thông tin qua tài khoản người dùng</p>
 </div>
 
 <div class="card">
@@ -208,11 +210,10 @@ code {
 <div class="card">
   <h3>🔎 Wikipedia Hub</h3>
 
-  <a class="download-btn" href="https://en.wikipedia.org/wiki/Malware" target="_blank" rel="noopener noreferrer">Malware</a>
-  <a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank" rel="noopener noreferrer">Virus</a>
-  <a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank" rel="noopener noreferrer">Ransomware</a>
-  <a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank" rel="noopener noreferrer">Trojan</a>
-  <a class="download-btn" href="https://en.wikipedia.org/wiki/Wikipedia:Compromised_accounts" target="_blank" rel="noopener noreferrer">How Hacker attack</a> 
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Malware" target="_blank">Malware</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Computer_virus" target="_blank">Virus</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Ransomware" target="_blank">Ransomware</a>
+  <a class="download-btn" href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)" target="_blank">Trojan</a>
 </div>
 
 <div class="card">
@@ -239,12 +240,12 @@ code {
 </div>
 
 <div class="card">
-  <img src="https://www.bkns.vn/wp-content/uploads/2019/12/hack-local-la-gi.jpg" alt="Cyber attack illustration">
-  <img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp" alt="Cyberbullying illustration">
+  <img src="https://www.bkns.vn/wp-content/uploads/2019/12/hack-local-la-gi.jpg" alt="Cyber attack">
+  <img src="https://nsf-gov-resources.nsf.gov/styles/news_hero_mobile_600x352_/s3/news/cyberbullying_f.jpg.webp" alt="Cyberbullying">
 </div>
 
-<p style="opacity:0.7; font-size:14px;">
-⚠️ This website is for educational purposes only
+<p style="opacity:0.7; font-size:14px; text-align:center;">
+⚠️ Educational purpose only
 </p>
 
 </body>
